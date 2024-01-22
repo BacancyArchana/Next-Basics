@@ -1,24 +1,34 @@
+:root {
+  --black: #000;
+  --white: #ffffff;
+  --font-size: 16px;
+  --font-size-lg: 18px;
+  --no-spacing: 0px;
+  --spacing: 16px;
+  --spacing-lg: 24px;
+}
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: var(--no-spacing);
+  margin: var(--no-spacing);
 }
+
 .nav {
-  background: black;
-  color: white;
-  padding: 24px;
+  background: var(--black);
+  color: var(--white);
+  padding: var(--spacing-lg);
 }
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 16px;
+  gap: var(--spacing);
 }
 .nav-list--item a {
-  font-size: 16px;
+  font-size: var(--font-size);
   color: inherit;
   text-decoration: none;
 }
 .nav-list-item_active {
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   font-weight: 600;
 }
