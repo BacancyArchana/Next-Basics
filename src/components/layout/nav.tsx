@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const navList = [
+  { path: '/dashboard', label: 'Dashboard' },
   { path: '/post', label: 'Posts' },
   { path: '/user', label: 'Users' },
 ];
